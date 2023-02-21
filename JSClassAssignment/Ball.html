@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball{
+            height: 221px;
+            width:225px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background-color: blue;
+            margin-top: 250px;
+            margin-left: 621px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="ball" id="hello"></div>
+    <script>
+        const area=document.querySelector("#hello");
+        area.addEventListener('mouseover',()=>{
+            area.style.width="290px"
+            area.style.height="300px"
+        })
+
+        area.addEventListener('mouseout',()=>{
+            area.style.width="221px"
+            area.style.height="225px"
+        })
+    </script>
+</body>
+</html>
